@@ -31,8 +31,8 @@ export const LivingSpaces: React.FC = () => {
           <div className="bg-white rounded-3xl overflow-hidden border border-sand-200 shadow-md group flex flex-col justify-between">
             <div className="relative aspect-[16/10] overflow-hidden">
               <img
-                src="https://images.unsplash.com/photo-1600210492486-724fe5c67fb0?auto=format&fit=crop&w=1200&q=85"
-                alt="Open concept living lounge"
+                src="/images/Living-room-area-in-villa-near-baga-beach.webp"
+                alt="The Goan House luxury living room area"
                 className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
               />
               <div className="absolute top-4 left-4">
@@ -46,17 +46,17 @@ export const LivingSpaces: React.FC = () => {
                 Double-Height Glass Lounge
               </h3>
               <p className="text-sand-500 text-sm leading-relaxed mb-6">
-                Sink into oversized linen sofas with views directly overlooking the illuminated pool. Equipped with a 65-inch 4K Smart TV and Marshall acoustic sound system for movie nights.
+                Sink into oversized plush sofas with natural daylight pouring through large glass windows. Equipped with high-speed Starlink WiFi and Marshall acoustic sound system for movie nights.
               </p>
               <div className="flex flex-wrap gap-2">
                 <span className="px-3 py-1 bg-sand-100 rounded-lg text-xs font-medium text-ocean-900">
                   Marshall Audio
                 </span>
                 <span className="px-3 py-1 bg-sand-100 rounded-lg text-xs font-medium text-ocean-900">
-                  Poolside Sliding Glass
+                  Sunlit Glass Architecture
                 </span>
                 <span className="px-3 py-1 bg-sand-100 rounded-lg text-xs font-medium text-ocean-900">
-                  Board Games & Books
+                  Plush Seating
                 </span>
               </div>
             </div>
@@ -66,8 +66,8 @@ export const LivingSpaces: React.FC = () => {
           <div className="bg-white rounded-3xl overflow-hidden border border-sand-200 shadow-md group flex flex-col justify-between">
             <div className="relative aspect-[16/10] overflow-hidden">
               <img
-                src="https://images.unsplash.com/photo-1556911220-e15b29be8c8f?auto=format&fit=crop&w=1200&q=85"
-                alt="Modern chef kitchen"
+                src="/images/Kitchen-in-villa.webp"
+                alt="Fully equipped kitchen in The Goan House villa"
                 className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
               />
               <div className="absolute top-4 left-4">
