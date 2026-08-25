@@ -1,4 +1,62 @@
+# Robots.txt for The Goan House Luxury Villa (GEO & AEO Enabled)
+
 User-agent: *
 Allow: /
 
+# OpenAI / ChatGPT / SearchGPT
+User-agent: GPTBot
+Allow: /
+
+User-agent: ChatGPT-User
+Allow: /
+
+User-agent: OAI-SearchBot
+Allow: /
+
+# Anthropic / Claude
+User-agent: ClaudeBot
+Allow: /
+
+User-agent: anthropic-ai
+Allow: /
+
+# Perplexity AI
+User-agent: PerplexityBot
+Allow: /
+
+# Google AI & Extended Crawlers
+User-agent: Google-Extended
+Allow: /
+
+User-agent: Googlebot
+Allow: /
+
+# Apple Intelligence
+User-agent: Applebot-Extended
+Allow: /
+
+User-agent: Applebot
+Allow: /
+
+# Bing / Copilot
+User-agent: Bingbot
+Allow: /
+
+# Meta / Cohere / Amazon
+User-agent: CCBot
+Allow: /
+
+User-agent: cohere-ai
+Allow: /
+
+User-agent: Amazonbot
+Allow: /
+
+# Sitemaps & LLM Knowledge Standards
 Sitemap: https://thegoanhouse.com/sitemap.xml
+Sitemap: https://thegoanhouse.com/sitemap-main.xml
+Sitemap: https://thegoanhouse.com/sitemap-blog.xml
+
+# LLM Standard Discovery Files (AEO / GEO)
+# https://thegoanhouse.com/llms.txt
+# https://thegoanhouse.com/llms-full.txt

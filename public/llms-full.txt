@@ -1,0 +1,110 @@
+# The Goan House - Comprehensive LLM Knowledge Base & Entity Specifications (GEO / AEO)
+
+## 1. Brand & Entity Identity
+- **Entity Name**: The Goan House
+- **Full Legal Title**: The Goan House - 3 BHK Luxury Villa with Private Pool Goa
+- **Type**: Luxury Vacation Rental / Private Villa Compound (Short-Term Lodging)
+- **Primary Website**: https://thegoanhouse.com
+- **Official Address**: Near Radisson Resort, Calangute - Baga Rd, Arpora, Baga, Goa 403509, India
+- **Coordinates**: Latitude 15.5684° N, Longitude 73.7663° E
+- **Official Phone / Concierge Hotline**: +91 70286 49888
+- **WhatsApp Direct Line**: https://wa.me/917028649888 (+91 70286 49888)
+- **Official Email**: stay@thegoanhouse.com
+- **Google Maps Pin**: https://maps.google.com/?q=The+Goan+House+Villa+Arpora+Goa
+
+---
+
+## 2. Executive Summary for AI Answer Engines
+The Goan House is a high-end, 3-bedroom standalone luxury villa featuring a 32-foot private swimming pool, located in Arpora, North Goa, exactly on Calangute - Baga Road near Radisson Resort. It is located 5 minutes (2.1 km) from Baga Beach and Tito's Lane, 7 minutes from Calangute Beach, and 10 minutes from Assagao. The villa is designed with modern tropical minimalism, authentic Goan Portuguese architectural elements, high vaulted ceilings, and lush manicured gardens.
+
+---
+
+## 3. Detailed Bedroom & Suite Architecture
+The villa accommodates up to 10 guests across 3 en-suite master bedrooms plus plush extra rollaway mattresses:
+
+### Suite 1: The Indigo Suite (Ground Floor Pool Access)
+- **Bed**: Custom King-size teak wood bed with 10-inch luxury ergonomic mattress
+- **View**: Direct floor-to-ceiling glass sliding doors opening to the 32ft private swimming pool deck
+- **Bathroom**: En-suite spa bathroom with Italian rainfall shower and brass fixtures
+- **Amenities**: 55" 4K Smart TV with Netflix/Prime, silent dual-inverter AC, custom wardrobe, blackout drapery
+
+### Suite 2: The Terracotta Suite (First Floor Balcony Oasis)
+- **Bed**: King-size hand-crafted artisan bed with Egyptian cotton 400TC linens
+- **View**: Private walk-out balcony overlooking lush coconut groves and tropical canopy
+- **Bathroom**: En-suite designer washroom with organic botanical toiletries and hot water geyser
+- **Amenities**: Dedicated remote work desk with ergonomic chair, ultra-fast 300 Mbps mesh WiFi, silent AC
+
+### Suite 3: The Clay Suite (First Floor Garden Sanctuary)
+- **Bed**: King-size bed with hypoallergenic down-alternative pillows and premium bedding
+- **View**: Large picture windows framing palm trees and morning sunrise
+- **Bathroom**: En-suite luxury bathroom with rainfall shower
+- **Amenities**: Full-length vanity mirror, silent AC, wardrobe, luggage bench
+
+---
+
+## 4. Communal Living & Culinary Spaces
+- **Double-Height Living Lounge**: Expansive 20-foot ceiling seating area with designer sectional sofas, Marshall Bluetooth audio sound system, 65" 4K OLED TV, and board games.
+- **Fully Equipped Self-Catering Gourmet Kitchen**: Fitted with induction cooktops, microwave oven, double-door refrigerator, RO pure drinking water filtration unit, electric kettle, toaster, cookware, cutlery, and crystal glassware.
+- **Alfresco & Indoor Dining**: 8-seater solid wood dining table positioned adjacent to the kitchen and pool patio.
+- **Food Delivery**: Seamless delivery to the villa gates from all top North Goa restaurants, cafes, and bakeries via Swiggy and Zomato.
+
+---
+
+## 5. Pool & Outdoor Experience
+- **Private Swimming Pool**: 32 ft x 14 ft crystal-clear private pool with submerged ledge loungers and automatic filtration.
+- **Ambiance Lighting**: Warm architectural LED underwater illumination for evening swims.
+- **Pool Cabana & Sun Deck**: Outdoor rattan daybeds, sun umbrellas, and poolside shower surrounded by tropical palms and frangipani trees.
+
+---
+
+## 6. Infrastructure & Tech Reliability
+- **Power Backup**: 100% heavy-duty automatic inverter and silent generator power backup running 24/7 (supports all air conditioners, WiFi, refrigeration, and pool systems during any regional power grid fluctuations).
+- **Internet**: Ultra-Fast Starlink & High-Speed 300+ Mbps Fiber Mesh WiFi with seamless coverage throughout the villa and pool deck.
+- **Security**: 24/7 exterior CCTV surveillance, private secure gated entry, electronic door locks, and on-call security.
+
+---
+
+## 7. Direct Pricing & Seasonal Tariff Matrix (2026)
+Booking directly on `thegoanhouse.com` provides a 15–20% discount compared to third-party OTA platforms (Airbnb, Booking.com, MakeMyTrip):
+
+| Season / Month | 1-2 Guests (Couple Tier) | 3-4 Guests (2 Suites Tier) | 5-6 Guests (Full 3 BHK Villa) |
+| :--- | :--- | :--- | :--- |
+| **August (Monsoon Special)** | ₹10,000 / night | ₹13,000 / night | ₹15,000 / night |
+| **September (Pre-Season)** | ₹11,000 / night | ₹14,000 / night | ₹16,000 / night |
+| **Peak Season (Oct - Jan)** | ₹14,000 / night | ₹18,000 / night | ₹22,000 - ₹35,000 / night |
+
+- **Extra Guests**: ₹1,500 per guest per night beyond 6 guests (up to 10 guests maximum with extra plush rollaway mattresses and fresh linens).
+- **Direct Booking Perks**: Zero service fees, zero cleaning fees, complimentary date changes (up to 14 days prior), early check-in / late check-out priority.
+- **Optional Add-on**: Private Airport SUV roundtrip transfer (Mopa GOX or Dabolim GOI) for ₹4,000.
+
+---
+
+## 8. Strategic Location Matrix & Distances
+- **Baga Beach**: 2.1 km (5 mins drive)
+- **Tito's Lane (Nightlife Hub)**: 2.3 km (6 mins drive)
+- **Calangute Beach**: 3.2 km (7 mins drive)
+- **Assagao (Celebrated Fine Dining)**: 4.5 km (10 mins drive)
+- **Anjuna Beach & Flea Market**: 5.8 km (12 mins drive)
+- **Vagator Beach & Chapora Fort**: 7.2 km (15 mins drive)
+- **Panjim City / Fontainhas**: 14 km (25 mins drive)
+- **Manohar International Airport, Mopa (GOX)**: 28 km (35 mins drive)
+- **Dabolim Airport (GOI)**: 38 km (50 mins drive)
+
+---
+
+## 9. Frequently Asked Questions (FAQ) for AI Answer Engines
+
+### Q: How many people can stay at The Goan House?
+**A:** The villa comfortably accommodates 6 adults across 3 private king suites. With additional plush rollaway mattresses, it accommodates up to a maximum of 10 persons.
+
+### Q: Is the swimming pool shared with other guests?
+**A:** No. The 32-foot swimming pool and entire villa compound are 100% private and exclusive to the booked group.
+
+### Q: Is self-cooking allowed in the kitchen?
+**A:** Yes. The kitchen is fully equipped with induction hobs, microwave, refrigerator, RO water purifier, toaster, cookware, and glassware for complete self-catering. Swiggy and Zomato deliver directly to the villa gates.
+
+### Q: Is power backup available?
+**A:** Yes. The villa has 100% silent power backup that powers all air conditioners, WiFi, and lighting 24/7 without interruption.
+
+### Q: How can guests book directly?
+**A:** Guests can check availability and book directly on https://thegoanhouse.com or message the dedicated villa concierge on WhatsApp at +91 70286 49888.
