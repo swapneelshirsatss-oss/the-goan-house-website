@@ -2,6 +2,25 @@ import React from 'react';
 import { PROPERTY_CONFIG, FAQS_DATA } from '../data/propertyData';
 
 export const SeoSchema: React.FC = () => {
+  // 1. Google SERP Site Name & WebSite Schema
+  const websiteSchema = {
+    "@context": "https://schema.org",
+    "@type": "WebSite",
+    "@id": "https://thegoanhouse.com/#website",
+    "name": "The Goan House - 3 BHK Luxury Villa with Private Pool Goa",
+    "alternateName": [
+      "The Goan House",
+      "The Goan House Goa",
+      "The Goan House Baga",
+      "The Goan House Arpora",
+      "The Goan House 3 BHK Villa with Private Pool",
+      "The Goan House Near Radisson Resort"
+    ],
+    "url": "https://thegoanhouse.com/",
+    "inLanguage": "en-IN"
+  };
+
+  // 2. Primary Lodging & Resort Entity Schema
   const lodgingSchema = {
     "@context": "https://schema.org",
     "@type": ["LodgingBusiness", "Hotel", "Resort", "LocalBusiness"],
@@ -10,13 +29,13 @@ export const SeoSchema: React.FC = () => {
     "alternateName": [
       "The Goan House",
       "The Goan House Goa",
-      "The Goan House Arpora",
       "The Goan House Baga",
+      "The Goan House Arpora",
       "The Goan House 3 BHK Villa with Private Pool",
       "The Goan House Near Radisson Resort"
     ],
     "description": PROPERTY_CONFIG.shortDesc,
-    "url": "https://thegoanhouse.com",
+    "url": "https://thegoanhouse.com/",
     "telephone": PROPERTY_CONFIG.contact.phone,
     "email": PROPERTY_CONFIG.contact.email,
     "priceRange": "₹₹",
@@ -82,12 +101,31 @@ export const SeoSchema: React.FC = () => {
         "value": true
       }
     ],
+    "areaServed": [
+      {
+        "@type": "AdministrativeArea",
+        "name": "Baga, Goa"
+      },
+      {
+        "@type": "AdministrativeArea",
+        "name": "Arpora, Goa"
+      },
+      {
+        "@type": "AdministrativeArea",
+        "name": "Calangute, Goa"
+      },
+      {
+        "@type": "AdministrativeArea",
+        "name": "North Goa"
+      }
+    ],
     "checkinTime": PROPERTY_CONFIG.contact.checkInTime,
     "checkoutTime": PROPERTY_CONFIG.contact.checkOutTime,
     "petsAllowed": "On Request",
     "hasMap": PROPERTY_CONFIG.contact.googleMapsUrl
   };
 
+  // 3. Local Business Map & Opening Hours Schema
   const localBusinessSchema = {
     "@context": "https://schema.org",
     "@type": "LocalBusiness",
@@ -109,7 +147,7 @@ export const SeoSchema: React.FC = () => {
       "latitude": 15.5684,
       "longitude": 73.7663
     },
-    "url": "https://thegoanhouse.com",
+    "url": "https://thegoanhouse.com/",
     "hasMap": PROPERTY_CONFIG.contact.googleMapsUrl,
     "priceRange": "₹₹",
     "openingHoursSpecification": [
@@ -122,6 +160,7 @@ export const SeoSchema: React.FC = () => {
     ]
   };
 
+  // 4. On-Page Visible FAQ Schema (Exact Match)
   const faqSchema = {
     "@context": "https://schema.org",
     "@type": "FAQPage",
@@ -135,6 +174,7 @@ export const SeoSchema: React.FC = () => {
     }))
   };
 
+  // 5. BreadcrumbList Schema
   const breadcrumbSchema = {
     "@context": "https://schema.org",
     "@type": "BreadcrumbList",
@@ -148,7 +188,7 @@ export const SeoSchema: React.FC = () => {
       {
         "@type": "ListItem",
         "position": 2,
-        "name": "Luxury Villa Arpora Goa",
+        "name": "Luxury Villa Baga Arpora Goa",
         "item": "https://thegoanhouse.com/#story"
       },
       {
@@ -168,6 +208,10 @@ export const SeoSchema: React.FC = () => {
 
   return (
     <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(websiteSchema) }}
+      />
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(lodgingSchema) }}
