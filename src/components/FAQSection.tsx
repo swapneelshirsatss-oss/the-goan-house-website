@@ -26,7 +26,7 @@ export const FAQSection: React.FC = () => {
           </h2>
           
           <p className="text-sand-500 text-base font-light leading-relaxed">
-            Everything you need to know about villa amenities, check-in, private chef services, and location.
+            Everything you need to know about villa amenities, check-in, kitchen facilities, and location.
           </p>
         </div>
 

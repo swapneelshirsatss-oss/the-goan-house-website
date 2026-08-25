@@ -37,7 +37,6 @@ export const BookingCalculator: React.FC<BookingCalculatorProps> = ({
     initialDates?.checkOut || defaultCheckOut.toISOString().split('T')[0]
   );
   const [guests, setGuests] = useState(initialDates?.guests || 6);
-  const [includeChef, setIncludeChef] = useState(false);
   const [includeAirportTransfer, setIncludeAirportTransfer] = useState(false);
 
   // Form input states
@@ -119,13 +118,12 @@ export const BookingCalculator: React.FC<BookingCalculatorProps> = ({
   const extraGuestFeeTotal = extraGuests * PROPERTY_CONFIG.pricing.extraGuestPerNight * nights;
   
   const villaBaseTotal = basePerNight * nights;
-  const chefTotal = includeChef ? PROPERTY_CONFIG.pricing.privateChefDaily * nights : 0;
   
   const airportTransferFee = includeAirportTransfer
     ? PROPERTY_CONFIG.pricing.airportPickupRoundtrip
     : 0;
 
-  const subTotal = villaBaseTotal + extraGuestFeeTotal + chefTotal + airportTransferFee;
+  const subTotal = villaBaseTotal + extraGuestFeeTotal + airportTransferFee;
   
   // Estimated OTA comparison savings (e.g. 18% OTA markup)
   const otaEquivalentPrice = Math.round(subTotal * 1.20);
@@ -138,7 +136,6 @@ export const BookingCalculator: React.FC<BookingCalculatorProps> = ({
       `📅 *Check-Out:* ${checkOut} (${nights} Night${nights > 1 ? 's' : ''})`,
       `👥 *Guests:* ${guests} Guests (${tierLabel})`,
       `🏷️ *Applied Rate:* ₹${basePerNight.toLocaleString('en-IN')}/night (${appliedSeasonLabel})`,
-      `👨‍🍳 *Private Chef Service:* ${includeChef ? 'Yes (Daily)' : 'No'}`,
       `🚗 *Airport Concierge Pickup:* ${includeAirportTransfer ? 'Yes (SUV Roundtrip +₹4,000)' : 'No'}`,
       `💰 *Estimated Direct Total:* ₹${subTotal.toLocaleString('en-IN')}`,
       `👤 *Name:* ${guestName || 'Guest'}`,
@@ -334,37 +331,8 @@ export const BookingCalculator: React.FC<BookingCalculatorProps> = ({
           {/* Optional Luxury Add-ons */}
           <div className="space-y-3 pt-2">
             <p className="text-xs uppercase tracking-wider font-semibold text-sand-500">
-              Optional Bespoke Add-ons
+              Optional Bespoke Concierge Add-on
             </p>
-
-            {/* Chef Toggle */}
-            <div
-              onClick={() => setIncludeChef(!includeChef)}
-              className={`p-4 rounded-2xl border cursor-pointer transition-all flex items-center justify-between ${
-                includeChef ? 'bg-amber-50/70 border-amber-300' : 'bg-sand-50 border-sand-200 hover:bg-sand-100/60'
-              }`}
-            >
-              <div className="flex items-center gap-3">
-                <div className={`w-9 h-9 rounded-xl flex items-center justify-center ${
-                  includeChef ? 'bg-amber-500 text-white' : 'bg-sand-200 text-sand-600'
-                }`}>
-                  <UtensilsCrossed className="w-4 h-4" />
-                </div>
-                <div>
-                  <h5 className="text-xs sm:text-sm font-semibold text-ocean-950">
-                    Dedicated Private Chef (All Meals)
-                  </h5>
-                  <p className="text-[11px] text-sand-500">
-                    Authentic Goan curry, coastal breakfasts & poolside BBQ (+₹3,500/day)
-                  </p>
-                </div>
-              </div>
-              <div className={`w-5 h-5 rounded-md border flex items-center justify-center ${
-                includeChef ? 'bg-amber-500 border-amber-500 text-white' : 'border-sand-300'
-              }`}>
-                {includeChef && <Check className="w-3.5 h-3.5" />}
-              </div>
-            </div>
 
             {/* Airport Transfer Toggle */}
             <div
@@ -422,13 +390,6 @@ export const BookingCalculator: React.FC<BookingCalculatorProps> = ({
                 <div className="flex justify-between text-amber-800">
                   <span>Extra Bedding ({extraGuests} guest{extraGuests > 1 ? 's' : ''})</span>
                   <span className="font-semibold">₹{extraGuestFeeTotal.toLocaleString('en-IN')}</span>
-                </div>
-              )}
-
-              {includeChef && (
-                <div className="flex justify-between text-amber-800">
-                  <span>Private Chef on Call</span>
-                  <span className="font-semibold">₹{chefTotal.toLocaleString('en-IN')}</span>
                 </div>
               )}
 

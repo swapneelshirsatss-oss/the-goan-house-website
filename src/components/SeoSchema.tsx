@@ -68,7 +68,7 @@ export const SeoSchema: React.FC = () => {
       },
       {
         "@type": "LocationFeatureSpecification",
-        "name": "Private Chef Service",
+        "name": "Fully Equipped Kitchen",
         "value": true
       },
       {

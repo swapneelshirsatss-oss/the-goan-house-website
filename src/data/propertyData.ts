@@ -103,7 +103,6 @@ export const PROPERTY_CONFIG = {
     extraGuestPerNight: 1500, // beyond 6 guests
     cleaningFee: 0, // Complimentary direct
     directDiscountPercent: 12, // Direct booking discount vs OTA
-    privateChefDaily: 3500,
     airportPickupRoundtrip: 4000,
     seasonalRates: [
       {
@@ -226,11 +225,11 @@ export const AMENITIES_DATA: AmenityItem[] = [
     highlight: true
   },
   {
-    id: "chef",
-    title: "Private Chef on Call",
-    description: "Authentic Goan seafood curries, continental breakfasts, and BBQ grill prepared fresh to your taste.",
+    id: "kitchen",
+    title: "Fully Equipped Gourmet Kitchen",
+    description: "Equipped with microwave, induction hobs, refrigerator, cookware, toaster, RO water purifier & glassware.",
     category: "culinary",
-    icon: "UtensilsCrossed",
+    icon: "CookingPot",
     highlight: true
   },
   {
@@ -242,11 +241,11 @@ export const AMENITIES_DATA: AmenityItem[] = [
     highlight: true
   },
   {
-    id: "kitchen",
-    title: "European Gourmet Kitchen",
-    description: "Fully equipped with induction hobs, microwave oven, double-door refrigerator, RO purifier & dishwasher.",
+    id: "dining",
+    title: "Alfresco Tropical Dining",
+    description: "8-seater solid wood dining table set under tropical trees beside the illuminated swimming pool.",
     category: "culinary",
-    icon: "CookingPot"
+    icon: "Wine"
   },
   {
     id: "housekeeping",
@@ -370,7 +369,7 @@ export const GALLERY_DATA: GalleryItem[] = [
     categoryLabel: "Living Spaces",
     image: "/images/Kitchen-in-villa.webp",
     aspectRatio: "aspect-[16/10]",
-    caption: "Modern kitchen equipped for private chef preparations and home-style cooking."
+    caption: "Modern kitchen equipped with microwave, induction cooktop, refrigerator, and cookware for self-cooking."
   },
   {
     id: "g9",
@@ -418,7 +417,7 @@ export const TESTIMONIALS_DATA: Testimonial[] = [
     guestType: "Family Vacation",
     stayDate: "November 2025",
     rating: 5,
-    quote: "A true private sanctuary. The pool, the chef's Goan prawn curry, and the quiet serenity in Arpora made this our best Goa trip yet.",
+    quote: "A true private sanctuary. The pool, the peaceful vibe, and the quiet serenity in Arpora made this our best Goa trip yet.",
     story: "We have stayed at top 5-star resorts in Goa, but The Goan House gave us complete privacy and warmth. The kids spent hours in the pool, and having Baga and Tito's just 5 minutes away meant we had peace without feeling isolated.",
     avatar: "https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=200&q=80"
   },
@@ -440,8 +439,8 @@ export const TESTIMONIALS_DATA: Testimonial[] = [
     guestType: "Bachelorette Celebration",
     stayDate: "December 2025",
     rating: 5,
-    quote: "Pure Airbnb Luxe aesthetic! Every corner is Instagram-worthy, and the private chef breakfast by the pool was unforgettable.",
-    story: "Booking directly saved us thousands in service fees compared to Airbnb. The villa host even arranged private airport pickups and table reservations at Thalassa. 10/10 recommendation!",
+    quote: "Pure Airbnb Luxe aesthetic! Every corner is Instagram-worthy, and slow sunny mornings by the pool were unforgettable.",
+    story: "Booking directly saved us thousands in service fees compared to Airbnb. The villa host arranged table reservations at Thalassa and everything was seamless. 10/10 recommendation!",
     avatar: "https://images.unsplash.com/photo-1517841905240-472988babdf9?auto=format&fit=crop&w=200&q=80"
   }
 ];
@@ -580,8 +579,8 @@ export const FAQS_DATA: FAQItem[] = [
   },
   {
     id: "faq-4",
-    question: "Can we hire a private chef for meals during our stay?",
-    answer: "Yes! We have an on-call private chef who can prepare delicious authentic Goan seafood, continental breakfasts, North Indian curries, and poolside BBQ grills. You only pay for groceries plus a modest daily preparation fee.",
+    question: "Is the kitchen fully equipped for cooking and food delivery?",
+    answer: "Yes! The villa features a fully equipped kitchen with an induction cooktop, microwave, refrigerator, RO water purifier, toaster, cutlery, and cookware for self-cooking. In addition, Swiggy, Zomato, and top North Goa restaurants deliver directly to the villa.",
     category: "Dining"
   },
   {

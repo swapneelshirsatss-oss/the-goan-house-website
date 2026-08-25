@@ -72,7 +72,7 @@ export const AmenitiesBento: React.FC = () => {
           </h2>
           
           <p className="text-sand-500 text-base sm:text-lg font-light leading-relaxed">
-            From 100% silent power backup and 300 Mbps Starlink mesh WiFi to an on-call private chef and daily housekeeping, your stay is completely taken care of.
+            From 100% silent power backup and 300 Mbps Starlink mesh WiFi to a fully equipped gourmet kitchen and daily housekeeping, your stay is completely taken care of.
           </p>
         </div>
 

@@ -61,7 +61,7 @@ export const App: React.FC = () => {
         {/* 5. Rooms & Suites (3 En-Suite Bedrooms with Interactive Specs) */}
         <RoomsSuites onReserve={() => handleOpenBookingModal()} />
 
-        {/* 6. Living Spaces, Gourmet Kitchen & Private Chef */}
+        {/* 6. Living Spaces & Fully Equipped Gourmet Kitchen */}
         <LivingSpaces />
 
         {/* 7. Curated Luxury Amenities Bento Grid */}

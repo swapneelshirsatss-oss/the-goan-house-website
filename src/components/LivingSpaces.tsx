@@ -1,6 +1,6 @@
 import React from 'react';
 import { PROPERTY_CONFIG } from '../data/propertyData';
-import { Utensils, Sparkles, Coffee, Wine, ChefHat, Tv } from 'lucide-react';
+import { Utensils, Sparkles, Coffee, Wine, Tv } from 'lucide-react';
 
 export const LivingSpaces: React.FC = () => {
   return (
@@ -62,7 +62,7 @@ export const LivingSpaces: React.FC = () => {
             </div>
           </div>
 
-          {/* Card 2: Gourmet Kitchen & Private Chef */}
+          {/* Card 2: Gourmet Kitchen & Dining */}
           <div className="bg-white rounded-3xl overflow-hidden border border-sand-200 shadow-md group flex flex-col justify-between">
             <div className="relative aspect-[16/10] overflow-hidden">
               <img
@@ -78,14 +78,14 @@ export const LivingSpaces: React.FC = () => {
             </div>
             <div className="p-8">
               <h3 className="text-xl sm:text-2xl font-serif font-medium text-ocean-950 mb-3">
-                Fully Equipped Kitchen & Private Chef
+                Fully Equipped Kitchen & Dining
               </h3>
               <p className="text-sand-500 text-sm leading-relaxed mb-6">
-                Cook your own meals or request our dedicated private chef to prepare authentic Goan fish thalis, fresh lobster grills, and hot South Indian breakfasts on demand.
+                Prepare your own meals, brew morning coffee, or order from top North Goa restaurants and cafes via Swiggy and Zomato delivered directly to the villa gates.
               </p>
               <div className="flex flex-wrap gap-2">
                 <span className="px-3 py-1 bg-sand-100 rounded-lg text-xs font-medium text-ocean-900">
-                  Private Chef on Call
+                  Self-Cooking Ready
                 </span>
                 <span className="px-3 py-1 bg-sand-100 rounded-lg text-xs font-medium text-ocean-900">
                   RO Pure Drinking Water

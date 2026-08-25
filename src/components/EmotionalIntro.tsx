@@ -30,7 +30,7 @@ export const EmotionalIntro: React.FC = () => {
       number: "5.0",
       suffix: "★",
       label: "Verified Guest Rating",
-      desc: "Flawless hospitality, private chef on call & dedicated villa host"
+      desc: "Flawless hospitality, fully equipped kitchen & dedicated villa host"
     }
   ];
 
