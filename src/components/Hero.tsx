@@ -112,10 +112,11 @@ export const Hero: React.FC<HeroProps> = ({ onCheckAvailability }) => {
                 onChange={(e) => setGuests(Number(e.target.value))}
                 className="w-full bg-transparent text-sm font-medium text-ocean-950 dark:text-white focus:outline-none cursor-pointer"
               >
-                <option value={2}>2 Guests (Couple)</option>
-                <option value={4}>4 Guests</option>
-                <option value={6}>6 Guests (Standard)</option>
-                <option value={8}>8 Guests (Max)</option>
+                <option value={2}>2 Guests (Couple Tier)</option>
+                <option value={4}>4 Guests (2 Bedrooms)</option>
+                <option value={6}>6 Guests (3 King Beds)</option>
+                <option value={8}>8 Guests (+ Extra Mattresses)</option>
+                <option value={10}>10 Guests (Max • 3 BR + Mattresses)</option>
               </select>
             </div>
           </div>

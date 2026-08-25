@@ -63,10 +63,10 @@ export const BookingCalculator: React.FC<BookingCalculatorProps> = ({
   const checkInMonth = dIn.getMonth(); // 7 = August, 8 = September
   let basePerNight = 15000;
   let appliedSeasonLabel = "August Special Rate";
-  let tierLabel = "5-8 Guests (Full 3 BHK Villa)";
+  let tierLabel = "5-6 Guests (Full 3 BHK Villa)";
 
   if (checkInMonth === 7) {
-    // August: ₹10,000 (1-2 guests), ₹13,000 (3-4 guests), ₹15,000 (5-8 guests)
+    // August: ₹10,000 (1-2 guests), ₹13,000 (3-4 guests), ₹15,000 (5-6 guests base)
     appliedSeasonLabel = "August Monsoon Special";
     if (guests <= 2) {
       basePerNight = 10000;
@@ -74,12 +74,15 @@ export const BookingCalculator: React.FC<BookingCalculatorProps> = ({
     } else if (guests <= 4) {
       basePerNight = 13000;
       tierLabel = "3-4 Guests (2 Bedrooms)";
+    } else if (guests <= 6) {
+      basePerNight = 15000;
+      tierLabel = "5-6 Guests (3 King Bedrooms)";
     } else {
       basePerNight = 15000;
-      tierLabel = "5-8 Guests (Full 3 BHK Villa)";
+      tierLabel = `${guests} Guests (3 BR + ${guests - 6} Extra Mattress${guests - 6 > 1 ? 'es' : ''})`;
     }
   } else if (checkInMonth === 8) {
-    // September: ₹11,000 (1-2 guests), ₹14,000 (3-4 guests), ₹16,000 (5-8 guests)
+    // September: ₹11,000 (1-2 guests), ₹14,000 (3-4 guests), ₹16,000 (5-6 guests base)
     appliedSeasonLabel = "September Pre-Season";
     if (guests <= 2) {
       basePerNight = 11000;
@@ -87,9 +90,12 @@ export const BookingCalculator: React.FC<BookingCalculatorProps> = ({
     } else if (guests <= 4) {
       basePerNight = 14000;
       tierLabel = "3-4 Guests (2 Bedrooms)";
+    } else if (guests <= 6) {
+      basePerNight = 16000;
+      tierLabel = "5-6 Guests (3 King Bedrooms)";
     } else {
       basePerNight = 16000;
-      tierLabel = "5-8 Guests (Full 3 BHK Villa)";
+      tierLabel = `${guests} Guests (3 BR + ${guests - 6} Extra Mattress${guests - 6 > 1 ? 'es' : ''})`;
     }
   } else {
     // Other months default
@@ -99,9 +105,12 @@ export const BookingCalculator: React.FC<BookingCalculatorProps> = ({
     } else if (guests <= 4) {
       basePerNight = 14000;
       tierLabel = "3-4 Guests";
+    } else if (guests <= 6) {
+      basePerNight = 16000;
+      tierLabel = "5-6 Guests (3 Bedrooms)";
     } else {
       basePerNight = 16000;
-      tierLabel = "Full 3 BHK Villa";
+      tierLabel = `${guests} Guests (3 BR + ${guests - 6} Extra Mattresses)`;
     }
     appliedSeasonLabel = "Seasonal Direct Rate";
   }
@@ -196,8 +205,11 @@ export const BookingCalculator: React.FC<BookingCalculatorProps> = ({
                 <span className="font-bold text-ocean-950">₹13,000 / night</span>
               </div>
               <div className="flex justify-between text-palm-900 font-semibold">
-                <span>5-8 Guests (Full 3 BHK)</span>
+                <span>5-6 Guests (Full 3 BHK)</span>
                 <span className="font-bold text-emerald-700">₹15,000 / night</span>
+              </div>
+              <div className="text-[11px] text-sand-500 pt-0.5">
+                *Up to 10 guests with extra plush mattresses
               </div>
             </div>
           </div>
@@ -222,8 +234,11 @@ export const BookingCalculator: React.FC<BookingCalculatorProps> = ({
                 <span className="font-bold text-ocean-950">₹14,000 / night</span>
               </div>
               <div className="flex justify-between text-palm-900 font-semibold">
-                <span>5-8 Guests (Full 3 BHK)</span>
+                <span>5-6 Guests (Full 3 BHK)</span>
                 <span className="font-bold text-emerald-700">₹16,000 / night</span>
+              </div>
+              <div className="text-[11px] text-sand-500 pt-0.5">
+                *Up to 10 guests with extra plush mattresses
               </div>
             </div>
           </div>
@@ -283,14 +298,14 @@ export const BookingCalculator: React.FC<BookingCalculatorProps> = ({
             <div className="flex items-center gap-4">
               <input
                 type="range"
-                min={2}
-                max={8}
+                min={1}
+                max={10}
                 value={guests}
                 onChange={(e) => setGuests(Number(e.target.value))}
                 className="w-full h-2 bg-sand-200 rounded-lg appearance-none cursor-pointer accent-gold-500"
               />
               <div className="flex items-center gap-1 shrink-0">
-                {[2, 4, 6, 8].map((num) => (
+                {[2, 4, 6, 8, 10].map((num) => (
                   <button
                     key={num}
                     type="button"
@@ -306,6 +321,14 @@ export const BookingCalculator: React.FC<BookingCalculatorProps> = ({
                 ))}
               </div>
             </div>
+            {guests > 6 && (
+              <div className="mt-2.5 text-xs text-amber-800 bg-amber-50/90 px-3.5 py-2 rounded-xl border border-amber-200/80 flex items-center gap-2">
+                <span>🛏️</span>
+                <span>
+                  <strong>Capacity Setup:</strong> 6 Guests accommodated across 3 luxury King suites + <strong>{guests - 6} Guests</strong> on extra plush rollaway mattresses (Max 10 persons).
+                </span>
+              </div>
+            )}
           </div>
 
           {/* Optional Luxury Add-ons */}

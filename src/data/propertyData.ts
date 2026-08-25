@@ -77,7 +77,7 @@ export const PROPERTY_CONFIG = {
     type: "Luxury 3 Bedroom Private Pool Villa",
     bedrooms: 3,
     bathrooms: "3.5 Luxury Bathrooms",
-    maxGuests: "Up to 8 Guests",
+    maxGuests: "Up to 10 Guests (3 King Suites + Extra Mattresses)",
     poolSize: "32 ft Private Crystal Pool",
     location: "Near Radisson Resort, Calangute - Baga Rd, Arpora, Baga, Goa 403509",
     landArea: "4,500 sq.ft Private Estate"
@@ -569,7 +569,7 @@ export const FAQS_DATA: FAQItem[] = [
   {
     id: "faq-2",
     question: "How many guests can comfortably stay at the villa?",
-    answer: "The villa features 3 large en-suite bedrooms and comfortably accommodates 6 adults in luxury king beds. With additional plush rollaway bedding, we can accommodate up to 8 guests total.",
+    answer: "The villa features 3 large en-suite bedrooms and comfortably accommodates 6 adults across luxury king beds. With additional plush rollaway mattresses, a maximum of 10 persons can comfortably stay in the 3 bedrooms.",
     category: "Capacity"
   },
   {
