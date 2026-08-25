@@ -4,9 +4,10 @@ import { Menu, X, Phone, MessageCircle, Calendar, Sparkles } from 'lucide-react'
 
 interface NavbarProps {
   onOpenBooking: () => void;
+  onNavigateBlog?: () => void;
 }
 
-export const Navbar: React.FC<NavbarProps> = ({ onOpenBooking }) => {
+export const Navbar: React.FC<NavbarProps> = ({ onOpenBooking, onNavigateBlog }) => {
   const [isScrolled, setIsScrolled] = useState(false);
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
 
@@ -30,6 +31,7 @@ export const Navbar: React.FC<NavbarProps> = ({ onOpenBooking }) => {
     { name: 'Amenities', href: '#amenities' },
     { name: 'Gallery', href: '#gallery' },
     { name: 'Goa Guide', href: '#guide' },
+    { name: 'Journal', href: '/blog', isBlog: true },
     { name: 'Reviews', href: '#reviews' },
     { name: 'FAQ', href: '#faq' },
   ];
@@ -79,6 +81,12 @@ export const Navbar: React.FC<NavbarProps> = ({ onOpenBooking }) => {
               <a
                 key={link.name}
                 href={link.href}
+                onClick={(e) => {
+                  if (link.isBlog && onNavigateBlog) {
+                    e.preventDefault();
+                    onNavigateBlog();
+                  }
+                }}
                 className={`text-xs xl:text-sm font-medium tracking-wider uppercase transition-all duration-200 hover:text-gold-500 relative py-1 after:content-[''] after:absolute after:bottom-0 after:left-0 after:w-0 after:h-[1.5px] after:bg-gold-500 after:transition-all hover:after:w-full ${
                   isScrolled ? 'text-ocean-800' : 'text-sand-100'
                 }`}
@@ -156,7 +164,13 @@ export const Navbar: React.FC<NavbarProps> = ({ onOpenBooking }) => {
               <a
                 key={link.name}
                 href={link.href}
-                onClick={() => setMobileMenuOpen(false)}
+                onClick={(e) => {
+                  setMobileMenuOpen(false);
+                  if (link.isBlog && onNavigateBlog) {
+                    e.preventDefault();
+                    onNavigateBlog();
+                  }
+                }}
                 className="text-lg font-serif tracking-wide text-sand-100 hover:text-gold-400 py-1 transition-colors flex items-center justify-between"
               >
                 <span>{link.name}</span>

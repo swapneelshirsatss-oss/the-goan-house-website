@@ -2,7 +2,11 @@ import React from 'react';
 import { PROPERTY_CONFIG } from '../data/propertyData';
 import { MapPin, Phone, Mail, MessageCircle, Heart, ArrowUp, Instagram } from 'lucide-react';
 
-export const Footer: React.FC = () => {
+interface FooterProps {
+  onNavigateBlog?: () => void;
+}
+
+export const Footer: React.FC<FooterProps> = ({ onNavigateBlog }) => {
   const scrollToTop = () => {
     window.scrollTo({ top: 0, behavior: 'smooth' });
   };
@@ -58,15 +62,29 @@ export const Footer: React.FC = () => {
           {/* Quick Links (2 Cols) */}
           <div className="lg:col-span-2 space-y-4">
             <h4 className="text-xs uppercase tracking-widest font-bold text-gold-400">
-              Navigation
+              The Villa
             </h4>
             <ul className="space-y-2.5 text-xs sm:text-sm text-sand-300 font-light">
-              <li><a href="#experience" className="hover:text-gold-400 transition-colors">The Experience</a></li>
               <li><a href="#story" className="hover:text-gold-400 transition-colors">Villa Story</a></li>
               <li><a href="#pool" className="hover:text-gold-400 transition-colors">Private Pool</a></li>
               <li><a href="#suites" className="hover:text-gold-400 transition-colors">Bedrooms & Suites</a></li>
               <li><a href="#amenities" className="hover:text-gold-400 transition-colors">Amenities</a></li>
               <li><a href="#gallery" className="hover:text-gold-400 transition-colors">Photo Gallery</a></li>
+              <li>
+                <a
+                  href="/blog"
+                  onClick={(e) => {
+                    if (onNavigateBlog) {
+                      e.preventDefault();
+                      onNavigateBlog();
+                    }
+                  }}
+                  className="text-gold-400 font-medium hover:text-white transition-colors inline-flex items-center gap-1"
+                >
+                  <span>Goa Journal</span>
+                  <span>✨</span>
+                </a>
+              </li>
             </ul>
           </div>
 
