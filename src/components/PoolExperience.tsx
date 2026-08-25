@@ -44,9 +44,11 @@ export const PoolExperience: React.FC<PoolExperienceProps> = ({ onReserve }) => 
             }`}>
               <button
                 onClick={() => setAmbianceMode('day')}
+                aria-label="Switch to Day Ambiance mode"
+                aria-pressed={ambianceMode === 'day'}
                 className={`flex items-center gap-2 px-4 py-2 rounded-full text-xs font-semibold tracking-wider transition-all duration-300 ${
                   ambianceMode === 'day'
-                    ? 'bg-amber-500 text-white shadow-md'
+                    ? 'bg-gold-500 text-ocean-950 shadow-md'
                     : 'text-sand-600 hover:text-ocean-900'
                 }`}
               >
@@ -56,6 +58,8 @@ export const PoolExperience: React.FC<PoolExperienceProps> = ({ onReserve }) => 
 
               <button
                 onClick={() => setAmbianceMode('night')}
+                aria-label="Switch to Night Ambiance mode"
+                aria-pressed={ambianceMode === 'night'}
                 className={`flex items-center gap-2 px-4 py-2 rounded-full text-xs font-semibold tracking-wider transition-all duration-300 ${
                   ambianceMode === 'night'
                     ? 'bg-sky-600 text-white shadow-md'

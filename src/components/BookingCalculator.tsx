@@ -258,6 +258,7 @@ export const BookingCalculator: React.FC<BookingCalculatorProps> = ({
                 <Calendar className="w-4 h-4 text-gold-600 shrink-0" />
                 <input
                   type="date"
+                  aria-label="Check-in Date"
                   value={checkIn}
                   onChange={(e) => setCheckIn(e.target.value)}
                   className="w-full bg-transparent text-sm font-medium text-ocean-950 focus:outline-none"
@@ -273,6 +274,7 @@ export const BookingCalculator: React.FC<BookingCalculatorProps> = ({
                 <Calendar className="w-4 h-4 text-gold-600 shrink-0" />
                 <input
                   type="date"
+                  aria-label="Check-out Date"
                   value={checkOut}
                   onChange={(e) => setCheckOut(e.target.value)}
                   className="w-full bg-transparent text-sm font-medium text-ocean-950 focus:outline-none"
@@ -298,6 +300,10 @@ export const BookingCalculator: React.FC<BookingCalculatorProps> = ({
                 min={1}
                 max={10}
                 value={guests}
+                aria-label="Number of Guests slider from 1 to 10"
+                aria-valuemin={1}
+                aria-valuemax={10}
+                aria-valuenow={guests}
                 onChange={(e) => setGuests(Number(e.target.value))}
                 className="w-full h-2 bg-sand-200 rounded-lg appearance-none cursor-pointer accent-gold-500"
               />
@@ -306,6 +312,8 @@ export const BookingCalculator: React.FC<BookingCalculatorProps> = ({
                   <button
                     key={num}
                     type="button"
+                    aria-label={`Select ${num} guests`}
+                    aria-pressed={guests === num}
                     onClick={() => setGuests(num)}
                     className={`w-8 h-8 rounded-lg text-xs font-bold transition-colors ${
                       guests === num
