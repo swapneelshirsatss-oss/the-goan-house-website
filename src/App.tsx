@@ -144,10 +144,10 @@ export const App: React.FC = () => {
         <ReviewsSocialProof />
 
         {/* 10. Curated North Goa Guide & Day-to-Night Itineraries */}
-        <GoaGuideItinerary />
+        <GoaGuideItinerary onNavigateBlog={(slug) => slug ? navigateTo(`/blog/${slug}`) : navigateTo('/blog')} />
 
         {/* 11. Direct Booking Privileges vs OTA Comparison */}
-        <DirectBookingBenefits />
+        <DirectBookingBenefits onNavigateBlog={(slug) => slug ? navigateTo(`/blog/${slug}`) : navigateTo('/blog')} />
 
         {/* 12. Interactive Booking Concierge & Live Dynamic Price Estimator */}
         <BookingCalculator />

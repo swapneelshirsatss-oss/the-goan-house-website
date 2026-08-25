@@ -46,21 +46,24 @@ export const Hero: React.FC<HeroProps> = ({ onCheckAvailability }) => {
         {/* Verified Luxury Badge */}
         <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-white/10 backdrop-blur-md border border-white/20 text-sand-100 text-xs sm:text-sm font-medium tracking-wide mb-6 shadow-sm">
           <Sparkles className="w-3.5 h-3.5 text-gold-400" />
-          <span>Exclusive 3 BHK Private Pool Sanctuary • Arpora, North Goa</span>
+          <span>3 BHK Luxury Villa with Private Pool • Baga & Arpora, North Goa</span>
           <span className="hidden md:inline-block w-1 h-1 rounded-full bg-gold-400" />
           <span className="hidden md:inline-flex items-center gap-1 text-gold-300">
-            <Star className="w-3 h-3 fill-gold-400 text-gold-400" /> 5.0 Rated
+            <Star className="w-3 h-3 fill-gold-400 text-gold-400" /> 5.0 ★ (28 Reviews)
           </span>
         </div>
 
-        {/* Cinematic Headline */}
+        {/* Cinematic Keyword-Rich H1 */}
         <h1 className="text-4xl sm:text-6xl md:text-7xl lg:text-8xl font-serif text-white font-normal tracking-tight max-w-5xl leading-[1.08] mb-6 drop-shadow-sm">
-          Where Goan Soul Meets <span className="italic font-normal text-gold-300">Modern Luxury</span>
+          The Goan House <br />
+          <span className="text-2xl sm:text-4xl md:text-5xl lg:text-6xl italic font-normal text-gold-300 block mt-2">
+            3 BHK Luxury Villa with Private Pool in Baga, Goa
+          </span>
         </h1>
 
-        {/* Emotional Subheading */}
+        {/* Emotional & Local Subheading */}
         <p className="text-sand-100/90 text-base sm:text-lg md:text-xl font-light max-w-2xl leading-relaxed mb-10 text-balance">
-          Wake up beside your 32-foot private crystal pool, savor slow tropical mornings under swaying palms, and enjoy curated coastal living in the heart of Arpora.
+          32-foot private crystal pool, 3 bespoke king suites accommodating up to 10 guests, and effortless 5-minute access to Baga Beach and Calangute.
         </p>
 
         {/* Quick Booking Concierge Bar (Desktop & Mobile Optimized) */}

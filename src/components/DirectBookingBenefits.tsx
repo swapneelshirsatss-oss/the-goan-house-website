@@ -9,7 +9,11 @@ const perkIcons: Record<string, React.ReactNode> = {
   Gift: <Gift className="w-6 h-6 text-rose-600" />
 };
 
-export const DirectBookingBenefits: React.FC = () => {
+interface DirectBookingBenefitsProps {
+  onNavigateBlog?: (slug?: string) => void;
+}
+
+export const DirectBookingBenefits: React.FC<DirectBookingBenefitsProps> = ({ onNavigateBlog }) => {
   return (
     <section className="py-24 sm:py-32 bg-white relative overflow-hidden">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -101,6 +105,22 @@ export const DirectBookingBenefits: React.FC = () => {
               <div className="col-span-3 flex justify-center text-sand-400 font-normal text-xs">Automated Bot Only</div>
             </div>
           </div>
+        </div>
+
+        {/* Supporting Internal Link */}
+        <div className="mt-8 text-center">
+          <a
+            href="/blog/private-pool-villa-vs-5-star-hotel-goa-comparison"
+            onClick={(e) => {
+              if (onNavigateBlog) {
+                e.preventDefault();
+                onNavigateBlog('private-pool-villa-vs-5-star-hotel-goa-comparison');
+              }
+            }}
+            className="inline-flex items-center gap-1.5 text-xs sm:text-sm font-semibold text-terracotta-600 hover:text-ocean-950 transition-colors underline underline-offset-4"
+          >
+            <span>Read Group Travel Guide: Private Pool Villa vs 5-Star Hotel in Goa →</span>
+          </a>
         </div>
 
       </div>

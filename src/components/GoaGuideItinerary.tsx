@@ -2,7 +2,11 @@ import React, { useState } from 'react';
 import { PROPERTY_CONFIG, ITINERARIES_DATA } from '../data/propertyData';
 import { MapPin, Navigation, Clock, Compass, Sparkles, ArrowUpRight } from 'lucide-react';
 
-export const GoaGuideItinerary: React.FC = () => {
+interface GoaGuideItineraryProps {
+  onNavigateBlog?: (slug?: string) => void;
+}
+
+export const GoaGuideItinerary: React.FC<GoaGuideItineraryProps> = ({ onNavigateBlog }) => {
   const [activeItineraryId, setActiveItineraryId] = useState(ITINERARIES_DATA[0].id);
 
   const activeItinerary = ITINERARIES_DATA.find((i) => i.id === activeItineraryId) || ITINERARIES_DATA[0];
@@ -15,16 +19,16 @@ export const GoaGuideItinerary: React.FC = () => {
         <div className="text-center max-w-3xl mx-auto mb-16">
           <div className="inline-flex items-center gap-2 px-3.5 py-1 rounded-full bg-sand-200 text-palm-800 text-xs font-semibold tracking-widest uppercase mb-4">
             <Compass className="w-3.5 h-3.5 text-gold-600" />
-            <span>Insider North Goa</span>
+            <span>North Goa Location & Itineraries</span>
           </div>
           
           <h2 className="text-3xl sm:text-5xl font-serif text-ocean-950 font-normal tracking-tight leading-tight mb-6">
-            Arpora: The Epicenter. <br />
-            <span className="italic text-palm-800">Minutes from Goa’s finest coasts.</span>
+            Explore North Goa. <br />
+            <span className="italic text-palm-800">5 Minutes from Baga Beach & Tito’s Lane.</span>
           </h2>
           
           <p className="text-sand-500 text-base sm:text-lg font-light leading-relaxed">
-            Close enough to plunge into the pulse of Baga, Tito's Lane, and Anjuna within minutes, yet peacefully secluded behind tropical foliage when it’s time to rest.
+            Close enough to plunge into the vibrant energy of Baga, Calangute, and Anjuna in 5 minutes, yet peacefully secluded behind tropical foliage when it’s time to rest.
           </p>
         </div>
 
@@ -127,6 +131,53 @@ export const GoaGuideItinerary: React.FC = () => {
             ))}
           </div>
 
+        </div>
+
+        {/* Contextual Internal Linking to Blog / Travel Guides */}
+        <div className="mt-16 text-center">
+          <p className="text-xs uppercase tracking-widest font-bold text-sand-500 mb-4">
+            Curated Local Stories & Guides
+          </p>
+          <div className="flex flex-wrap justify-center gap-4 text-xs sm:text-sm">
+            <a
+              href="/blog/why-baga-is-the-best-location-to-stay-in-north-goa"
+              onClick={(e) => {
+                if (onNavigateBlog) {
+                  e.preventDefault();
+                  onNavigateBlog('why-baga-is-the-best-location-to-stay-in-north-goa');
+                }
+              }}
+              className="inline-flex items-center gap-1.5 px-4 py-2 rounded-full bg-white border border-sand-200 text-ocean-950 hover:text-terracotta-600 hover:border-terracotta-300 font-medium transition-all shadow-sm group"
+            >
+              <span>Why Baga is North Goa’s Best Location</span>
+              <ArrowUpRight className="w-3.5 h-3.5 group-hover:translate-x-0.5 group-hover:-translate-y-0.5 transition-transform" />
+            </a>
+            <a
+              href="/blog/insider-guide-best-cafes-and-restaurants-in-arpora-baga"
+              onClick={(e) => {
+                if (onNavigateBlog) {
+                  e.preventDefault();
+                  onNavigateBlog('insider-guide-best-cafes-and-restaurants-in-arpora-baga');
+                }
+              }}
+              className="inline-flex items-center gap-1.5 px-4 py-2 rounded-full bg-white border border-sand-200 text-ocean-950 hover:text-terracotta-600 hover:border-terracotta-300 font-medium transition-all shadow-sm group"
+            >
+              <span>Top Cafes & Restaurants in Arpora & Baga</span>
+              <ArrowUpRight className="w-3.5 h-3.5 group-hover:translate-x-0.5 group-hover:-translate-y-0.5 transition-transform" />
+            </a>
+            <a
+              href="/blog"
+              onClick={(e) => {
+                if (onNavigateBlog) {
+                  e.preventDefault();
+                  onNavigateBlog();
+                }
+              }}
+              className="inline-flex items-center gap-1.5 px-4 py-2 rounded-full bg-ocean-950 text-white hover:bg-gold-500 hover:text-ocean-950 font-semibold transition-all shadow-sm"
+            >
+              <span>View All Goa Travel Guides →</span>
+            </a>
+          </div>
         </div>
 
       </div>
