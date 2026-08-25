@@ -1,0 +1,193 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  /* Luxury Color Primitives */
+  --color-sand-bg: #FAF8F5;
+  --color-sand-subtle: #F3EFE7;
+  --color-sand-card: #FFFFFF;
+  --color-ocean-dark: #0A141F;
+  --color-ocean-slate: #152332;
+  --color-palm-deep: #162E22;
+  --color-palm-accent: #26543C;
+  --color-terracotta: #C4623C;
+  --color-gold-accent: #D4AF37;
+  --color-gold-champagne: #EAD08D;
+  
+  /* Text & Border Tokens */
+  --text-main: #142231;
+  --text-muted: #5D6E7E;
+  --text-subtle: #8A9CAE;
+  --border-delicate: rgba(20, 34, 49, 0.08);
+  --border-gold: rgba(212, 175, 55, 0.3);
+
+  /* Elevation Shadows */
+  --shadow-luxe-sm: 0 2px 8px -2px rgba(10, 20, 31, 0.05);
+  --shadow-luxe-md: 0 10px 30px -5px rgba(10, 20, 31, 0.08), 0 4px 10px -2px rgba(10, 20, 31, 0.03);
+  --shadow-luxe-lg: 0 20px 45px -10px rgba(10, 20, 31, 0.12), 0 8px 16px -4px rgba(10, 20, 31, 0.04);
+  --shadow-glow-gold: 0 0 35px rgba(212, 175, 55, 0.25);
+  --shadow-glow-pool: 0 0 45px rgba(56, 189, 248, 0.3);
+}
+
+/* Day vs Night Ambiance Theme for Pool Section */
+.theme-twilight {
+  --color-sand-bg: #070E17;
+  --color-sand-subtle: #0F1D2C;
+  --color-sand-card: #122131;
+  --text-main: #F7F5EE;
+  --text-muted: #A8BACB;
+  --text-subtle: #6D8297;
+  --border-delicate: rgba(255, 255, 255, 0.1);
+}
+
+html {
+  scroll-behavior: smooth;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
+}
+
+body {
+  background-color: var(--color-sand-bg);
+  color: var(--text-main);
+  font-family: 'Plus Jakarta Sans', system-ui, sans-serif;
+  overflow-x: hidden;
+  transition: background-color 0.5s ease, color 0.5s ease;
+}
+
+/* Luxury Typography Utilities */
+h1, h2, h3, .font-serif-luxe {
+  font-family: 'Playfair Display', Georgia, serif;
+  text-wrap: balance;
+  letter-spacing: -0.015em;
+}
+
+.font-cormorant-luxe {
+  font-family: 'Cormorant Garamond', Georgia, serif;
+}
+
+p {
+  text-wrap: pretty;
+  line-height: 1.68;
+}
+
+/* Glassmorphism Classes */
+.glass-nav {
+  background: rgba(250, 248, 245, 0.82);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border-bottom: 1px solid rgba(212, 175, 55, 0.15);
+}
+
+.glass-nav-dark {
+  background: rgba(10, 20, 31, 0.85);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.glass-card {
+  background: rgba(255, 255, 255, 0.8);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid rgba(20, 34, 49, 0.06);
+}
+
+.glass-card-dark {
+  background: rgba(15, 29, 44, 0.75);
+  backdrop-filter: blur(14px);
+  -webkit-backdrop-filter: blur(14px);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+/* Spotlight Glowing Card Pattern */
+.spotlight-card {
+  position: relative;
+  background: #ffffff;
+  border-radius: 1.25rem;
+  border: 1px solid rgba(20, 34, 49, 0.07);
+  overflow: hidden;
+  transition: transform 0.35s cubic-bezier(0.16, 1, 0.3, 1), box-shadow 0.35s ease, border-color 0.3s ease;
+}
+
+.spotlight-card::before {
+  content: '';
+  position: absolute;
+  top: var(--mouse-y, -1000px);
+  left: var(--mouse-x, -1000px);
+  transform: translate(-50%, -50%);
+  width: 380px;
+  height: 380px;
+  background: radial-gradient(circle, rgba(212, 175, 55, 0.15) 0%, rgba(212, 175, 55, 0) 70%);
+  pointer-events: none;
+  opacity: 0;
+  transition: opacity 0.4s ease;
+}
+
+.spotlight-card:hover::before {
+  opacity: 1;
+}
+
+.spotlight-card:hover {
+  transform: translateY(-4px);
+  border-color: rgba(212, 175, 55, 0.4);
+  box-shadow: 0 16px 36px -8px rgba(10, 20, 31, 0.09);
+}
+
+/* Subtle Shimmer Animation */
+.shimmer-badge {
+  background: linear-gradient(90deg, rgba(212, 175, 55, 0.1) 0%, rgba(212, 175, 55, 0.3) 50%, rgba(212, 175, 55, 0.1) 100%);
+  background-size: 200% 100%;
+  animation: shimmer 3s infinite linear;
+}
+
+/* Custom Luxury Scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-track {
+  background: #FAF8F5;
+}
+::-webkit-scrollbar-thumb {
+  background: #DED3BF;
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #AFA085;
+}
+
+/* Smooth Fade In Utilities */
+.animate-fade-scale {
+  animation: fadeScale 0.6s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+}
+
+@keyframes fadeScale {
+  from {
+    opacity: 0;
+    transform: scale(0.96) translateY(12px);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1) translateY(0);
+  }
+}
+
+/* Concentric Radii Math */
+.concentric-outer {
+  border-radius: 20px;
+  padding: 12px;
+}
+.concentric-inner {
+  border-radius: 8px; /* 20px - 12px = 8px */
+}
+
+/* Reduced Motion Override */
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: 0.001s !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.001s !important;
+    scroll-behavior: auto !important;
+  }
+}
