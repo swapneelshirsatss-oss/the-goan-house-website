@@ -72,7 +72,7 @@ export const PROPERTY_CONFIG = {
   shortName: "The Goan House",
   tagline: "3 BHK Luxury Villa with Private Pool • Arpora, Baga, Goa",
   shortDesc: "A private architectural sanctuary located Near Radisson Resort, Calangute - Baga Rd, Arpora, Baga, Goa 403509. 3 BHK private pool villa blending contemporary tropical minimalism with authentic Portuguese-Goan soul.",
-  logoUrl: "/images/the-goan-house-logo.png",
+  logoUrl: "/images/The-goan-house-logo.webp",
   villaSpecs: {
     type: "Luxury 3 Bedroom Private Pool Villa",
     bedrooms: 3,
@@ -125,17 +125,16 @@ export const PROPERTY_CONFIG = {
     ]
   },
   heroMedia: {
-    // Easily replaceable with actual villa photography / MP4 video
-    videoPoster: "https://images.unsplash.com/photo-1580587771525-78b9dba3b914?auto=format&fit=crop&w=2000&q=85",
+    videoPoster: "/images/Entrance-villa-in-goa-near-baga-beach-with-private-pool.webp",
     ambientPhotos: [
-      "https://images.unsplash.com/photo-1512917774080-9991f1c4c750?auto=format&fit=crop&w=2000&q=85",
-      "https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?auto=format&fit=crop&w=2000&q=85",
-      "https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?auto=format&fit=crop&w=2000&q=85"
+      "/images/Entrance-villa-in-goa-near-baga-beach-with-private-pool.webp",
+      "/images/Private-swimming-pool-villa-in-baga.webp",
+      "/images/Living-Room-the-goan-hosue-baga-goa-villa.webp"
     ]
   },
   poolDayNight: {
-    dayImage: "https://images.unsplash.com/photo-1576013551627-0cc20b96c2a7?auto=format&fit=crop&w=1800&q=85",
-    nightImage: "https://images.unsplash.com/photo-1540555700478-4be289fbecef?auto=format&fit=crop&w=1800&q=85",
+    dayImage: "/images/Private-swimming-pool-villa-in-baga.webp",
+    nightImage: "/images/Private-swimming-pool-villa-in-baga.webp",
   },
   nearbyAttractions: [
     { name: "Baga Beach", distance: "2.1 km", time: "5 mins", type: "Beach & Water Sports" },
@@ -166,7 +165,7 @@ export const SUITES_DATA: SuiteInfo[] = [
       "55\" 4K Smart TV with Netflix, Prime & AirPlay",
       "Daikin silent climate control & acoustic soundproofing"
     ],
-    image: "https://images.unsplash.com/photo-1616594039964-ae9021a400a0?auto=format&fit=crop&w=1200&q=85",
+    image: "/images/The-indigo-suite-Bedroom-villa-in-goa.webp",
     imageAlt: "The Indigo Suite at The Goan House"
   },
   {
@@ -185,7 +184,7 @@ export const SUITES_DATA: SuiteInfo[] = [
       "Dedicated bespoke work desk with high-speed Starlink WiFi",
       "Floor-to-ceiling blackout linen drapes"
     ],
-    image: "https://images.unsplash.com/photo-1590490360182-c33d57733427?auto=format&fit=crop&w=1200&q=85",
+    image: "/images/The Terracota Suite- bedroom.webp",
     imageAlt: "The Terracotta Suite at The Goan House"
   },
   {
@@ -204,7 +203,7 @@ export const SUITES_DATA: SuiteInfo[] = [
       "Smart Bluetooth surround sound speaker",
       "Quiet courtyard garden vista"
     ],
-    image: "https://images.unsplash.com/photo-1566665797739-1674de7a421a?auto=format&fit=crop&w=1200&q=85",
+    image: "/images/The-clay-suite-bedroom-in-villa-goa.webp",
     imageAlt: "The Clay Suite at The Goan House"
   }
 ];
@@ -303,75 +302,111 @@ export const AMENITIES_DATA: AmenityItem[] = [
 export const GALLERY_DATA: GalleryItem[] = [
   {
     id: "g1",
-    title: "Private Pool Oasis at Sunset",
+    title: "32-Foot Private Crystal Pool",
     category: "pool",
     categoryLabel: "Private Pool",
-    image: "https://images.unsplash.com/photo-1576013551627-0cc20b96c2a7?auto=format&fit=crop&w=1200&q=85",
+    image: "/images/Private-swimming-pool-villa-in-baga.webp",
     aspectRatio: "aspect-[4/3]",
-    caption: "32-foot private swimming pool surrounded by tropical palms and cushioned sun loungers."
+    caption: "Exclusive private swimming pool with sundeck loungers and lush tropical palm surroundings."
   },
   {
     id: "g2",
-    title: "Open-Concept Living & Lounge",
+    title: "Double-Height Living Lounge",
     category: "living",
     categoryLabel: "Living Spaces",
-    image: "https://images.unsplash.com/photo-1600210492486-724fe5c67fb0?auto=format&fit=crop&w=1200&q=85",
+    image: "/images/Living-Room-the-goan-hosue-baga-goa-villa.webp",
     aspectRatio: "aspect-[16/10]",
-    caption: "Double-height living space with plush linen seating opening directly onto the pool terrace."
+    caption: "Expansive luxury living area with plush seating, warm wood finishes, and direct pool views."
   },
   {
     id: "g3",
-    title: "The Indigo Suite Bedroom",
+    title: "The Indigo Suite (Room 1)",
     category: "suites",
     categoryLabel: "Bedrooms",
-    image: "https://images.unsplash.com/photo-1616594039964-ae9021a400a0?auto=format&fit=crop&w=1200&q=85",
+    image: "/images/The-indigo-suite-Bedroom-villa-in-goa.webp",
     aspectRatio: "aspect-[4/3]",
-    caption: "The Indigo Suite with California King bed, sun terrace, and bespoke Portuguese-Goan accents."
+    caption: "Master Suite with California King bed, sun terrace, and bespoke Portuguese-Goan accents."
   },
   {
     id: "g4",
-    title: "Alfresco Sunset Dining Patio",
+    title: "Private Villa Estate Entrance",
     category: "outdoor",
     categoryLabel: "Outdoor & Dining",
-    image: "https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?auto=format&fit=crop&w=1200&q=85",
+    image: "/images/Entrance-villa-in-goa-near-baga-beach-with-private-pool.webp",
     aspectRatio: "aspect-[3/4]",
-    caption: "Intimate poolside dinner setting under fairy lights and swaying Goan palms."
+    caption: "Grand gated entrance with private parking in Arpora, minutes from Baga Beach."
   },
   {
     id: "g5",
-    title: "Spa Bath with Terrazzo Bathtub",
+    title: "The Terracotta Suite (Room 2)",
     category: "suites",
     categoryLabel: "Bedrooms",
-    image: "https://images.unsplash.com/photo-1584622650111-993a426fbf0a?auto=format&fit=crop&w=1200&q=85",
+    image: "/images/The Terracota Suite- bedroom.webp",
     aspectRatio: "aspect-[4/3]",
-    caption: "Freestanding stone bathtub with organic Goan botanical bath salts."
+    caption: "Warm earthy tones with handcrafted king bed and private palm canopy balcony."
   },
   {
     id: "g6",
-    title: "Gourmet Chef's Kitchen",
-    category: "living",
-    categoryLabel: "Living Spaces",
-    image: "https://images.unsplash.com/photo-1556911220-e15b29be8c8f?auto=format&fit=crop&w=1200&q=85",
-    aspectRatio: "aspect-[16/10]",
-    caption: "Fully fitted modern kitchen with high-end appliances and private breakfast counter."
+    title: "The Clay Suite (Room 3)",
+    category: "suites",
+    categoryLabel: "Bedrooms",
+    image: "/images/The-clay-suite-bedroom-in-villa-goa.webp",
+    aspectRatio: "aspect-[4/3]",
+    caption: "Calming organic clay ambiance with convertible king/twin beds and courtyard views."
   },
   {
     id: "g7",
-    title: "Night Illumination & Mood Glow",
-    category: "pool",
-    categoryLabel: "Private Pool",
-    image: "https://images.unsplash.com/photo-1540555700478-4be289fbecef?auto=format&fit=crop&w=1200&q=85",
-    aspectRatio: "aspect-[4/3]",
-    caption: "Ambient underwater pool lighting for midnight dips and evening cocktails."
+    title: "Dining Area & Bar Setup",
+    category: "living",
+    categoryLabel: "Living Spaces",
+    image: "/images/Dining-area-in-villa-nea-baga-beach-goa.webp",
+    aspectRatio: "aspect-[16/10]",
+    caption: "Handcrafted 8-seater dining table and curated bar area for evening cocktails."
   },
   {
     id: "g8",
-    title: "Lush Tropical Garden Courtyard",
-    category: "outdoor",
-    categoryLabel: "Outdoor & Dining",
-    image: "https://images.unsplash.com/photo-1588880331179-bc9b93a8cb5e?auto=format&fit=crop&w=1200&q=85",
-    aspectRatio: "aspect-[3/4]",
-    caption: "Private manicured gardens with exotic bougainvillea, frangipani, and coconut trees."
+    title: "Fully Equipped Gourmet Kitchen",
+    category: "living",
+    categoryLabel: "Living Spaces",
+    image: "/images/Kitchen-in-villa.webp",
+    aspectRatio: "aspect-[16/10]",
+    caption: "Modern kitchen equipped for private chef preparations and home-style cooking."
+  },
+  {
+    id: "g9",
+    title: "Spa En-Suite Bathroom",
+    category: "suites",
+    categoryLabel: "Bedrooms",
+    image: "/images/Bathroom-in-villa-near-baga.webp",
+    aspectRatio: "aspect-[4/3]",
+    caption: "Designer rainfall shower, brass fittings, and organic botanical amenities."
+  },
+  {
+    id: "g10",
+    title: "Curated Bar & Cocktail Nook",
+    category: "living",
+    categoryLabel: "Living Spaces",
+    image: "/images/Bar-in-villa-goa-near-baga-beach.webp",
+    aspectRatio: "aspect-[4/3]",
+    caption: "Dedicated bar counter ready for sunset cocktails and chilled Goan drinks."
+  },
+  {
+    id: "g11",
+    title: "Common Area Seating Lounge",
+    category: "living",
+    categoryLabel: "Living Spaces",
+    image: "/images/seating-area-in-coomon-area-in-private-luxary-villa.webp",
+    aspectRatio: "aspect-[16/10]",
+    caption: "Comfortable lounge area for group conversations and relaxed reading."
+  },
+  {
+    id: "g12",
+    title: "Luxury Guest Washroom",
+    category: "suites",
+    categoryLabel: "Bedrooms",
+    image: "/images/Washroom-in-villa-goa.webp",
+    aspectRatio: "aspect-[4/3]",
+    caption: "Clean, elegant bathroom design with Italian sanitary fittings and hot water."
   }
 ];
 

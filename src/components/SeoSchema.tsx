@@ -21,7 +21,7 @@ export const SeoSchema: React.FC = () => {
     "email": PROPERTY_CONFIG.contact.email,
     "priceRange": "₹₹",
     "image": [
-      "https://thegoanhouse.com/images/the-goan-house-logo.png",
+      "https://thegoanhouse.com/images/The-goan-house-logo.webp",
       PROPERTY_CONFIG.heroMedia.videoPoster,
       PROPERTY_CONFIG.poolDayNight.dayImage
     ],
@@ -93,7 +93,7 @@ export const SeoSchema: React.FC = () => {
     "@type": "LocalBusiness",
     "@id": "https://thegoanhouse.com/#localbusiness",
     "name": PROPERTY_CONFIG.name,
-    "image": "https://thegoanhouse.com/images/the-goan-house-logo.png",
+    "image": "https://thegoanhouse.com/images/The-goan-house-logo.webp",
     "telephone": PROPERTY_CONFIG.contact.phone,
     "email": PROPERTY_CONFIG.contact.email,
     "address": {
