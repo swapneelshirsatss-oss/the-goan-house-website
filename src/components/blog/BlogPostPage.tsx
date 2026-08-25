@@ -35,6 +35,28 @@ export const BlogPostPage: React.FC<BlogPostPageProps> = ({
   useEffect(() => {
     window.scrollTo({ top: 0, behavior: 'smooth' });
     document.title = `${post.title} | The Goan House Journal`;
+    
+    // Dynamically update meta description
+    const metaDesc = document.querySelector('meta[name="description"]');
+    if (metaDesc) {
+      metaDesc.setAttribute('content', post.excerpt);
+    }
+    
+    // Dynamically update canonical
+    const canonicalLink = document.querySelector('link[rel="canonical"]');
+    if (canonicalLink) {
+      canonicalLink.setAttribute('href', `https://thegoanhouse.com/blog/${post.slug}`);
+    }
+
+    return () => {
+      document.title = "The Goan House - 3 BHK Luxury Villa with Private Pool in Baga, Goa";
+      if (metaDesc) {
+        metaDesc.setAttribute('content', "Book The Goan House: 3 BHK luxury private pool villa in Baga, Arpora, North Goa (Near Radisson Resort). 32ft crystal pool, 3 suites, max 10 guests. Call +91 70286 49888.");
+      }
+      if (canonicalLink) {
+        canonicalLink.setAttribute('href', "https://thegoanhouse.com/");
+      }
+    };
   }, [post]);
 
   const relatedPosts = BLOG_POSTS.filter((p) => p.slug !== post.slug).slice(0, 2);
