@@ -1,6 +1,25 @@
-# Robots.txt for The Goan House Luxury Villa (GEO & AEO Enabled)
+# Robots.txt for The Goan House Luxury Villa (GEO, AEO, Yandex & IndexNow Enabled)
 
 User-agent: *
+Allow: /
+
+# Yandex Search & Webmaster Crawlers
+User-agent: Yandex
+Allow: /
+
+User-agent: YandexBot
+Allow: /
+
+User-agent: YandexMobileBot
+Allow: /
+
+User-agent: YandexDirect
+Allow: /
+
+User-agent: YandexImages
+Allow: /
+
+User-agent: YandexMetrika
 Allow: /
 
 # OpenAI / ChatGPT / SearchGPT
@@ -38,7 +57,7 @@ Allow: /
 User-agent: Applebot
 Allow: /
 
-# Bing / Copilot
+# Bing / Copilot / IndexNow
 User-agent: Bingbot
 Allow: /
 
@@ -52,11 +71,10 @@ Allow: /
 User-agent: Amazonbot
 Allow: /
 
-# Sitemaps & LLM Knowledge Standards
+# Sitemaps & IndexNow Standards
 Sitemap: https://thegoanhouse.com/sitemap.xml
 Sitemap: https://thegoanhouse.com/sitemap-main.xml
 Sitemap: https://thegoanhouse.com/sitemap-blog.xml
 
-# LLM Standard Discovery Files (AEO / GEO)
-# https://thegoanhouse.com/llms.txt
-# https://thegoanhouse.com/llms-full.txt
+# IndexNow Key Location: https://thegoanhouse.com/c89e24b7a6f14022839d07f354be891a.txt
+# LLM Knowledge Standard: https://thegoanhouse.com/llms.txt
