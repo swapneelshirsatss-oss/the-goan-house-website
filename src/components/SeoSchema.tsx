@@ -1,5 +1,5 @@
 import React from 'react';
-import { PROPERTY_CONFIG, FAQS_DATA } from '../data/propertyData';
+import { PROPERTY_CONFIG, FAQS_DATA, SUITES_DATA } from '../data/propertyData';
 
 export const SeoSchema: React.FC = () => {
   // 1. Google SERP Site Name & WebSite Schema
@@ -23,7 +23,12 @@ export const SeoSchema: React.FC = () => {
   // 2. Primary Lodging & Resort Entity Schema
   const lodgingSchema = {
     "@context": "https://schema.org",
-    "@type": ["LodgingBusiness", "Hotel", "Resort", "LocalBusiness"],
+    "@type": ["LodgingBusiness", "Resort", "BedAndBreakfast", "LocalBusiness"],
+    "additionalType": [
+      "https://en.wikipedia.org/wiki/Homestay",
+      "https://en.wikipedia.org/wiki/Resort",
+      "https://en.wikipedia.org/wiki/Villa"
+    ],
     "@id": "https://thegoanhouse.com/#lodging",
     "name": PROPERTY_CONFIG.name,
     "alternateName": [
@@ -31,6 +36,10 @@ export const SeoSchema: React.FC = () => {
       "The Goan House Goa",
       "The Goan House Baga",
       "The Goan House Arpora",
+      "The Goan House Homestay",
+      "The Goan House Luxury Homestay Goa",
+      "The Goan House Villa Resort",
+      "The Goan House 3 BHK Homestay with Private Pool",
       "The Goan House 3 BHK Villa with Private Pool",
       "The Goan House Near Radisson Resort"
     ],
@@ -38,11 +47,14 @@ export const SeoSchema: React.FC = () => {
     "url": "https://thegoanhouse.com/",
     "telephone": PROPERTY_CONFIG.contact.phone,
     "email": PROPERTY_CONFIG.contact.email,
-    "priceRange": "₹₹",
+    "priceRange": "₹10,000 - ₹16,000",
+    "currenciesAccepted": "INR",
+    "paymentAccepted": "Cash, Credit Card, UPI, Bank Transfer",
     "image": [
       "https://thegoanhouse.com/images/The-goan-house-logo.webp",
-      PROPERTY_CONFIG.heroMedia.videoPoster,
-      PROPERTY_CONFIG.poolDayNight.dayImage
+      `https://thegoanhouse.com${PROPERTY_CONFIG.heroMedia.videoPoster}`,
+      `https://thegoanhouse.com${PROPERTY_CONFIG.poolDayNight.dayImage}`,
+      ...SUITES_DATA.map((s) => `https://thegoanhouse.com${s.image}`)
     ],
     "address": {
       "@type": "PostalAddress",
@@ -122,7 +134,29 @@ export const SeoSchema: React.FC = () => {
     "checkinTime": PROPERTY_CONFIG.contact.checkInTime,
     "checkoutTime": PROPERTY_CONFIG.contact.checkOutTime,
     "petsAllowed": "On Request",
-    "hasMap": PROPERTY_CONFIG.contact.googleMapsUrl
+    "hasMap": PROPERTY_CONFIG.contact.googleMapsUrl,
+    "containsPlace": SUITES_DATA.map((suite) => ({
+      "@type": "HotelRoom",
+      "@id": `https://thegoanhouse.com/#suite-${suite.id}`,
+      "name": suite.name,
+      "description": suite.description,
+      "bed": {
+        "@type": "BedDetails",
+        "numberOfBeds": 1,
+        "typeOfBed": suite.bed
+      },
+      "occupancy": {
+        "@type": "QuantitativeValue",
+        "value": 2,
+        "unitText": "Adults"
+      },
+      "image": `https://thegoanhouse.com${suite.image}`,
+      "amenityFeature": suite.features.map((feat) => ({
+        "@type": "LocationFeatureSpecification",
+        "name": feat,
+        "value": true
+      }))
+    }))
   };
 
   // 3. Local Business Map & Opening Hours Schema
@@ -134,6 +168,8 @@ export const SeoSchema: React.FC = () => {
     "image": "https://thegoanhouse.com/images/The-goan-house-logo.webp",
     "telephone": PROPERTY_CONFIG.contact.phone,
     "email": PROPERTY_CONFIG.contact.email,
+    "priceRange": "₹10,000 - ₹16,000",
+    "currenciesAccepted": "INR",
     "address": {
       "@type": "PostalAddress",
       "streetAddress": PROPERTY_CONFIG.contact.streetAddress,
@@ -149,7 +185,6 @@ export const SeoSchema: React.FC = () => {
     },
     "url": "https://thegoanhouse.com/",
     "hasMap": PROPERTY_CONFIG.contact.googleMapsUrl,
-    "priceRange": "₹₹",
     "openingHoursSpecification": [
       {
         "@type": "OpeningHoursSpecification",

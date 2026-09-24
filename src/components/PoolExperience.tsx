@@ -78,6 +78,8 @@ export const PoolExperience: React.FC<PoolExperienceProps> = ({ onReserve }) => 
           <img
             src={ambianceMode === 'day' ? PROPERTY_CONFIG.poolDayNight.dayImage : PROPERTY_CONFIG.poolDayNight.nightImage}
             alt="The Goan House Private Swimming Pool"
+            loading="lazy"
+            decoding="async"
             className="w-full h-full object-cover transition-all duration-1000 transform group-hover:scale-105"
           />
           

@@ -15,6 +15,8 @@ export const VillaStory: React.FC = () => {
               <img
                 src={PROPERTY_CONFIG.heroMedia.ambientPhotos[0]}
                 alt="The Goan House Tropical Architecture"
+                loading="lazy"
+                decoding="async"
                 className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700 ease-out"
               />
               <div className="absolute inset-0 bg-gradient-to-t from-ocean-950/70 via-transparent to-transparent" />
@@ -40,6 +42,8 @@ export const VillaStory: React.FC = () => {
               <img
                 src={PROPERTY_CONFIG.heroMedia.ambientPhotos[1]}
                 alt="The Goan House Interior Details"
+                loading="lazy"
+                decoding="async"
                 className="w-full h-full object-cover"
               />
             </div>

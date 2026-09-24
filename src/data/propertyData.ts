@@ -68,13 +68,15 @@ export interface FAQItem {
 }
 
 export const PROPERTY_CONFIG = {
-  name: "The Goan House - 3 BHK Luxury Villa with Private Pool Goa",
+  name: "The Goan House - 3 BHK Luxury Homestay & Private Pool Villa Resort Goa",
   shortName: "The Goan House",
-  tagline: "3 BHK Luxury Villa with Private Pool • Arpora, Baga, Goa",
-  shortDesc: "A private architectural sanctuary located Near Radisson Resort, Calangute - Baga Rd, Arpora, Baga, Goa 403509. 3 BHK private pool villa blending contemporary tropical minimalism with authentic Portuguese-Goan soul.",
+  category: "Homestay & Boutique Villa Resort",
+  tagline: "3 BHK Luxury Homestay & Private Pool Villa Resort • Arpora, Baga, Goa",
+  shortDesc: "A private architectural homestay and luxury villa resort located Near Radisson Resort, Calangute - Baga Rd, Arpora, Baga, Goa 403509. 3 BHK private pool estate blending personalized Goan homestay hospitality with 5-star boutique resort comforts.",
   logoUrl: "/images/The-goan-house-logo.webp",
   villaSpecs: {
-    type: "Luxury 3 Bedroom Private Pool Villa",
+    type: "3 BHK Luxury Homestay & Private Pool Villa Resort",
+    category: "Homestay & Boutique Resort",
     bedrooms: 3,
     bathrooms: "3.5 Luxury Bathrooms",
     maxGuests: "Up to 10 Guests (3 King Suites + Extra Mattresses)",

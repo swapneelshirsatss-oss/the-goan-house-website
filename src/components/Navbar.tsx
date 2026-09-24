@@ -58,6 +58,8 @@ export const Navbar: React.FC<NavbarProps> = ({ onOpenBooking, onNavigateBlog })
               <img
                 src={PROPERTY_CONFIG.logoUrl}
                 alt="The Goan House Logo"
+                width="56"
+                height="56"
                 className="w-full h-full object-contain rounded-full"
               />
             </div>
@@ -70,7 +72,7 @@ export const Navbar: React.FC<NavbarProps> = ({ onOpenBooking, onNavigateBlog })
               <span className={`text-[10px] tracking-widest uppercase font-medium transition-colors ${
                 isScrolled ? 'text-palm-700' : 'text-sand-200'
               }`}>
-                Arpora • 3 BHK Private Pool
+                Arpora • 3 BHK Homestay & Resort
               </span>
             </div>
           </a>

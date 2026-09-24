@@ -33,19 +33,21 @@ export const Footer: React.FC<FooterProps> = ({ onNavigateBlog }) => {
                 <img
                   src={PROPERTY_CONFIG.logoUrl}
                   alt="The Goan House Brand Logo"
+                  width="64"
+                  height="64"
                   className="w-full h-full object-contain rounded-full"
                 />
               </div>
               <div>
                 <h3 className="font-serif text-2xl text-white font-medium">The Goan House</h3>
                 <p className="text-xs uppercase tracking-widest text-gold-400 font-semibold">
-                  Luxury 3 BHK Villa with Private Pool
+                  Luxury 3 BHK Homestay & Private Pool Resort
                 </p>
               </div>
             </div>
 
             <p className="text-sm text-sand-300 font-light max-w-sm leading-relaxed">
-              An exclusive 3-bedroom private pool villa located Near Radisson Resort, Calangute - Baga Rd, Arpora, Baga, Goa 403509. Modern tropical minimalism infused with authentic Portuguese-Goan warmth.
+              An exclusive 3-bedroom private pool homestay and boutique villa resort located Near Radisson Resort, Calangute - Baga Rd, Arpora, Baga, Goa 403509. Personalized Goan homestay hospitality infused with 5-star boutique resort comforts.
             </p>
 
             <div className="flex items-center gap-3 pt-2">

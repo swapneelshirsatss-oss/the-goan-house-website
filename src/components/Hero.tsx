@@ -33,6 +33,9 @@ export const Hero: React.FC<HeroProps> = ({ onCheckAvailability }) => {
         <img
           src={PROPERTY_CONFIG.heroMedia.videoPoster}
           alt="The Goan House Luxury Private Pool Villa Arpora"
+          fetchPriority="high"
+          loading="eager"
+          decoding="async"
           className="w-full h-full object-cover object-center scale-105 animate-[pulseGlow_12s_ease-in-out_infinite_alternate]"
         />
         {/* Layered Luxury Gradient Vignettes */}
@@ -46,7 +49,7 @@ export const Hero: React.FC<HeroProps> = ({ onCheckAvailability }) => {
         {/* Verified Luxury Badge */}
         <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-white/10 backdrop-blur-md border border-white/20 text-sand-100 text-xs sm:text-sm font-medium tracking-wide mb-6 shadow-sm">
           <Sparkles className="w-3.5 h-3.5 text-gold-400" />
-          <span>3 BHK Luxury Villa with Private Pool • Baga & Arpora, North Goa</span>
+          <span>3 BHK Luxury Homestay & Villa Resort • Baga & Arpora, North Goa</span>
           <span className="hidden md:inline-block w-1 h-1 rounded-full bg-gold-400" />
           <span className="hidden md:inline-flex items-center gap-1 text-gold-300">
             <Star className="w-3 h-3 fill-gold-400 text-gold-400" /> 5.0 ★ (28 Reviews)
@@ -57,7 +60,7 @@ export const Hero: React.FC<HeroProps> = ({ onCheckAvailability }) => {
         <h1 className="text-4xl sm:text-6xl md:text-7xl lg:text-8xl font-serif text-white font-normal tracking-tight max-w-5xl leading-[1.08] mb-6 drop-shadow-sm">
           The Goan House <br />
           <span className="text-2xl sm:text-4xl md:text-5xl lg:text-6xl italic font-normal text-gold-300 block mt-2">
-            3 BHK Luxury Villa with Private Pool in Baga, Goa
+            3 BHK Luxury Homestay & Private Pool Villa Resort in Baga, Goa
           </span>
         </h1>
 

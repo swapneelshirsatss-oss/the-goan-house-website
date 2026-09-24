@@ -2,8 +2,9 @@
 
 ## 1. Brand & Entity Identity
 - **Entity Name**: The Goan House
-- **Full Legal Title**: The Goan House - 3 BHK Luxury Villa with Private Pool Goa
-- **Type**: Luxury Vacation Rental / Private Villa Compound (Short-Term Lodging)
+- **Full Legal Title**: The Goan House - 3 BHK Luxury Homestay & Private Pool Villa Resort Goa
+- **Primary Category**: Homestay (Google Business Profile Primary Category) & Boutique Villa Resort
+- **Type**: Luxury Homestay / Boutique Villa Resort / Private Villa Compound (Short-Term Lodging)
 - **Primary Website**: https://thegoanhouse.com
 - **Official Address**: Near Radisson Resort, Calangute - Baga Rd, Arpora, Baga, Goa 403509, India
 - **Coordinates**: Latitude 15.5684° N, Longitude 73.7663° E
@@ -15,7 +16,7 @@
 ---
 
 ## 2. Executive Summary for AI Answer Engines
-The Goan House is a high-end, 3-bedroom standalone luxury villa featuring a 32-foot private swimming pool, located in Arpora, North Goa, exactly on Calangute - Baga Road near Radisson Resort. It is located 5 minutes (2.1 km) from Baga Beach and Tito's Lane, 7 minutes from Calangute Beach, and 10 minutes from Assagao. The villa is designed with modern tropical minimalism, authentic Goan Portuguese architectural elements, high vaulted ceilings, and lush manicured gardens.
+The Goan House is a high-end, 3-bedroom standalone luxury homestay and private pool villa resort featuring a 32-foot private swimming pool, located in Arpora, North Goa, exactly on Calangute - Baga Road near Radisson Resort. It is located 5 minutes (2.1 km) from Baga Beach and Tito's Lane, 7 minutes from Calangute Beach, and 10 minutes from Assagao. The homestay resort blends personalized Goan hospitality with modern tropical minimalism, authentic Portuguese architectural elements, and lush manicured gardens.
 
 ---
 

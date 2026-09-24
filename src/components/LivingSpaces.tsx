@@ -33,6 +33,8 @@ export const LivingSpaces: React.FC = () => {
               <img
                 src="/images/Living-room-area-in-villa-near-baga-beach.webp"
                 alt="The Goan House luxury living room area"
+                loading="lazy"
+                decoding="async"
                 className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
               />
               <div className="absolute top-4 left-4">
@@ -68,6 +70,8 @@ export const LivingSpaces: React.FC = () => {
               <img
                 src="/images/Kitchen-in-villa.webp"
                 alt="Fully equipped kitchen in The Goan House villa"
+                loading="lazy"
+                decoding="async"
                 className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
               />
               <div className="absolute top-4 left-4">
